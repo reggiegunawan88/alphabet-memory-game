@@ -13,7 +13,7 @@ const GameCard = ({ item, flipped, matched, handleSelectedCard }: GameCardProps)
   return (
     <div
       className={`relative shadow-md cursor-pointer ${
-        matched ? 'bg-yellow-300' : 'bg-green-400'
+        matched ? 'bg-yellow-300' : 'bg-green-400 hover:bg-green-500'
       } h-20 w-full rounded-md transition-all duration-500 [transform-style:preserve-3d] ${flipped ? '[transform:rotateY(180deg)]' : ''}`}
       onClick={() => handleSelectedCard(item)}
     >
